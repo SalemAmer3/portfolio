@@ -56,3 +56,4 @@ document.addEventListener("DOMContentLoaded", function () {
   menuToggle.addEventListener("click", function () {
       navLinks.classList.toggle("active");
   });
+  });
