@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", ()=>{
   const sections = document.querySelectorAll(".section");
   const navLinks = document.querySelectorAll(".nav-links a");
@@ -55,4 +56,3 @@ document.addEventListener("DOMContentLoaded", function () {
   menuToggle.addEventListener("click", function () {
       navLinks.classList.toggle("active");
   });
-});

@@ -1,5 +1,7 @@
+
 User-agent: *
 Disallow: /private/  
 Disallow: /admin/  
+
 
 Sitemap: https://SalemTaweel.github.io/portfolio/sitemap.xml 
