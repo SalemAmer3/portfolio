@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of Salem Amer Abdallah Taweel, a Computer Science student with expertise in Front-end and Back-end development.">
-    <meta name="keywords" content="Salem Taweel, Web Developer, Front-end, Back-end, HTML, CSS, JavaScript, React, Node.js, C++">
+    <meta name="description" content="Personal portfolio of Salem Amer Abdallah Taweel, Full-Stack Developer specializing in React, C#, ASP.NET Core.">
+    <meta name="keywords" content="Salem Taweel, Full-Stack Developer, React, C#, ASP.NET Core, Web Development">
     <meta name="author" content="Salem Amer Abdallah Taweel">
     <meta name="robots" content="index, follow">
     <!-- To share on social media  -->
@@ -14,225 +13,408 @@
     <meta property="og:image" content="https://yourwebsite.com/your-image.jpg">
     <meta property="og:url" content="https://yourwebsite.com">
     <meta property="og:type" content="website">
+
+   
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" type="image/webp" href="icon.webp">
-    <title>Salem Amer-Portfolio</title>
+    <link rel="icon" type="image/webp" href="images/icon.webp">
+
+     <title>Salem Amer - Full-Stack Developer</title>
+
 </head>
-<body>
+<body data-theme="light">
+    
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-text">Loading...</div>
+    </div>
 
-            <!--      THE NAVBAR      -->
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
 
-        <nav class="navbar">
-           <!--   <div class="logo">Salem</div>    -->
-            <button class="menu-toggle">&#9776;</button>
-            <ul class="nav-links">
-            <a href="#home" id="homelink"><li>Home</li></a>
-            <a href="#about" ><li>About</li></a>
-            <a href="#skills" ><li>Skills</li></a>
-            <a href="#projects" ><li>Projects</li></a>
-            <a href="#contact" ><li>Contact</li></a>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Salem</div>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="asseset/SAlem__CV.pdf" target="_blank">CV</a></li>
 
-            </ul>
-        </nav>
-            <!--     END OF NAVBAR       -->
+        </ul>
+        <button class="theme-toggle" title="Toggle Theme">🌙</button>
+    </nav>
 
-            <!--     START HOME PAGE     -->
-
-        <section id="home" class="section">
-                <h1>Welcome, I'm Salem Amer 👋</h1>
-                <h3>A Front-end Developer </h3>
-                <h4>Building beautiful & functional web experiences.</h4>
-
-                <div class="profile-container">
-                    <img src="home-image.jpg" alt="Salem Taweel - Web Developer" class="home-image" loading="lazy">
-                    <div class="circle-animation"></div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1>👋 Hi, I'm Salem Amer</h1>
+            <div class="typing-text"></div>
+            <div class="profile-container">
+                <div class="orbit">
+                    <div class="orbit-dot"></div>
                 </div>
-        
-                <a href="#projects" class="btn">My projects</a>
-        <a href="#about" class="btn"> More About Me</a>
+                <img src="images/home-image.jpg" alt="Salem Amer" class="profile-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'250\' height=\'250\'%3E%3Crect fill=\'%236D597A\' width=\'250\' height=\'250\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'100\' text-anchor=\'middle\' dy=\'.3em\' fill=\'white\'%3ESA%3C/text%3E%3C/svg%3E'">
+            </div>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
     </section>
 
-            <!--     END HOME PAGE     -->
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-card">
+                <h3>🎓 Education & Background</h3>
+                <p>I'm Salem Amer Abdallah Taweel, a Computer Science student at Palestine Polytechnic University, specializing in Full-Stack Development. Proficient in front-end technologies (React, JavaScript) and expanding into back-end with C#, ASP.NET Core MVC, Web APIs, and SQL Server. I completed Harvard's CS50x course, which strengthened my problem-solving and algorithmic thinking.</p>
+            </div>
+            <div class="about-card">
+                <h3>🚀 My Journey</h3>
+                <p>My programming journey started with HTML & CSS, evolved through JavaScript and React for front-end mastery. Now I'm advancing into Full-Stack Development with C#, ASP.NET Core MVC, Web APIs, and SQL Server to build complete enterprise applications. I also completed Harvard's CS50x course, strengthening my algorithmic thinking and problem-solving skills.</p>
+            </div>
+            <div class="about-card">
+                <h3>🎯 Goals</h3>
+                <ul>
+                    <li>✅ Master Full-Stack .NET Development</li>
+                    <li>✅ Build Enterprise-Level Applications</li>
+                    <li>✅ Contribute to Open Source Projects</li>
+                    <li>✅ Work on AI-Powered Web Apps</li>
+                    <li>✅ Learn Mobile Development (Xamarin/.NET MAUI)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <!--     START ABOUT PAGE     -->
-
-            <section id="about" class="section">
-                <h1 class="AboutH1">About Me</h1>
-                <p>
-                    I'm Salem Amer Abdallah Taweel, a computer science student at Palestine Polytechnic University. 
-                    <br>
-                   I have a passion for work and experience in Front-End development using HTML , CSS, JavaScript, React and Material UI.
-                   <br>
-                   I'm currently learning Back-End development using Node.js.
-                   <br>
-                   In addition to programming ,I have skills in C and C++, and am proficient in Word, Excel, and PowerPoint.
-                   <br>
-                   I also have experience in computer and phone maintenance.
-                   <br>
-                   I aspire to further develop my skills and intelligance technology.
-                   <br>
-                </p>   
-
-                <hr id="hr">
-
-                <section id="my-journey">
-                    <h2>My Journey</h2>
-                    <p>My journey into programming started with a deep curiosity for technology. I began with HTML and CSS, then moved on to JavaScript and front-end frameworks like React. Now, I’m learning back-end development with Node.js to become a full-stack developer.</p>
-                
-                    <p>To strengthen my computer science fundamentals, I completed the *CS50x* course by Harvard University. This course helped me master problem-solving, algorithms, and data structures, which greatly improved my coding skills.</p>
-                </section>
-
-                <hr id="hr">
-
-                <section id="my-goals">
-                    <h2>My Goals</h2>
-                    <ul>
-                        <li>Master full-stack development.</li>
-                        <li>Contribute to open-source projects.</li>
-                        <li>Work on AI-powered web applications</li>
-                        <li>Build a tech community in my local area</li>
-                        <li>Learn mobile development to create cross-platform applications.</li>
-                    </ul>
-                </section> 
-
-                <hr id="hr">
-
-                <section id="cv">
-                    <h2>My CV</h2>
-                    <p>You can Download and view my CV by clicking the button below: </p>
-                    <a href="SAlem__CV.pdf" target="_blank" class="btn">Download Cv</a>
-            </section>
-           
-                
-               
-        </section>
-
-            <!--     END ABOUT PAGE     -->
-
-            <!--    Start Skills Page   -->
-
-            <section id="skills" class="section">
-                <h1>My Skills</h1>
-               <div class="skills-item">
-                <div class="skill">
-                    <p>HTML</p>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 90%;">90%</div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <p>CSS</p>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%;">85%</div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <p>JavaScript</p>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 75%;">75%</div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <p>React</p>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 70%;">70%</div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <p>C++</p>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 92%;">92%</div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <p>C</p>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 72%;">72%</div>
-                    </div>
-                </div>
-
-                   <div class="skill">
-                    <p>Python</p>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%;">85%</div>
-                    </div>
-                </div>
-
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
                 <div class="skill-item">
-                    <h3>Problem Solving & Data Structures</h3>
-                    <p>In addition to my web development skills, I have also learned problem-solving techniques and data structures. These skills help me write efficient and optimized code, improving my ability to tackle complex programming challenges. I enjoy solving algorithmic problems and continuously improving my logical thinking abilities.</p>
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">HTML5</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
                 </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">CSS3</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
                 </div>
-            </section>
+                <div class="skill-item">
+                    <i class="fab fa-js skill-icon"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react skill-icon"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">React</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+                    </div>
+                </div>
+            </div>
 
-            <!--    End Skills Page -->
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend & Full Stack</h3>
+                <div class="skill-item">
+                    <i class="fas fa-code skill-icon" style="color: #68217a;"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">ASP.NET Core MVC</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database skill-icon" style="color: #cc2927;"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">SQL Server & Entity Framework</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-network-wired skill-icon" style="color: #512bd4;"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">Web API & REST</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="72"></div></div>
+                    </div>
+                </div>
+            </div>
 
-             <!--     START PROJECTS PAGE       -->
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Programming Languages</h3>
+                <div class="skill-item">
+                    <i class="fas fa-hashtag skill-icon" style="color: #68217a;"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">C#</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code skill-icon" style="color: #00599C;"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">C++</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-python skill-icon"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-copyright skill-icon" style="color: #A8B9CC;"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">C</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="72"></div></div>
+                    </div>
+                </div>
+            </div>
 
-        <section id="projects" class="section">
-            <h1>My Projects</h1>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                <div class="skill-item">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">Git & GitHub</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-dollar-sign skill-icon" style="color: #0868ac;"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">jQuery</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="78"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cubes skill-icon" style="color: #5c2d91;"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">OOP (Object-Oriented Programming)</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-brain skill-icon"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">Problem Solving</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-project-diagram skill-icon"></i>
+                    <div class="skill-info">
+                        <div class="skill-name">Data Structures & Algorithms</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
             <div class="project-card">
-                <h3>Expense-Tracher</h3>
-                <p>A responsive web application built with React and Vite that helps users track their income and expenses efficiently. It supports light and dark modes, includes basic security measures against common vulnerabilities, and offers a clean, user-friendly interface for managing daily finances.</p>
-                <a href="https://expense-tracker-salem.netlify.app/" target="_blank">View Project</a>
-
-                <hr>
-                <h3>BMI Calculator</h3>
-                <p>A simple web-based BMI calculator that quickly computes Body Mass Index and provides health categorization based on weight and height.</p>
-                <a href="https://salemamer3.github.io/BMIweight/" target="_blank">View Project</a>
-            
-                <hr>
-                <h3>XO Game</h3>
-                <p>(Tic-Tac-Toe) game is a classic two-player strategy game where players take turns marking X or O in a 3x3 grid, aiming to get three in a row to win. If all cells are filled without a winner, the game ends in a draw.</p>
-                <a href="https://salemamer3.github.io/XO-Game/" target="_blank">View Project</a>
-
-                <hr>
-                <h3>CRUDS Application</h3>
-                <p>A simple CRUD web application that allows users to create, read, update, and delete data while storing it in the browser’s local storage. It features search functionality for quick access to records, ensuring a seamless and efficient data management experience.</p>
-                <a href=" https://salemamer3.github.io/CRUDS-Application/" target="_blank">View Project</a>
-                
-                <hr>
-                <h3>Calculator</h3>
-                <p>A simple and responsive web calculator for basic arithmetic operations, featuring a clean UI and real-time result display. It ensures smooth interaction with error handling for invalid inputs.</p>
-                <a href="https://salemamer3.github.io/Calculator/" target="_blank">View Project</a>
-
-                <hr>
-                <h3>Lavender-Store</h3>
-                <p>A responsive e-commerce front-end for a local store, built with vanilla JavaScript and featuring a client-side admin dashboard for content management using localStorage.</p>
-                <a href="https://salemamer3.github.io/lavender-store/" target="_blank">View Project</a>
-            
-                <hr>
-                <h3>Portfolio-Builder</h3>
-                <p>A user-friendly tool designed to help professionals create a polished portfolio in minutes. Users can input their personal information, projects, and skills, then choose from multiple design templates for instant preview. The final portfolio can be downloaded as a high-quality PDF, ready for sharing.</p>
-                <a href="https://builder-portfolio.netlify.app/" target="_blank">View Project</a>
+                <div class="project-img">
+                    <img src="images/expTra.png" alt="Expense Tracker" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>💰</div>'">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Expense Tracker</h3>
+                    <p class="project-desc">A responsive React app for tracking income and expenses with light/dark mode and security measures.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Vite</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://expense-tracker-salem.netlify.app/" target="_blank" class="link-demo">Live Demo</a>
+                        <a href="https://github.com/SalemAmer3/expense-tracker" target="_blank" class="link-code">View Code</a>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <!--     END PROJECTS PAGE     -->
+           
 
-        <!--     START CONTACT PAGE       -->
-
-        <section id="contact" class="section">
-            <h2 class="content-contact"><i class="fas fa-rocket"></i> Let's Work Together!</h2>
-            <p>Have an idea? Need a website? Let's build something awesome!</p>
-            <div class="contact-info">
-                <a href="mailto:sa6272471@gmail.com" class="contact-item" target="_blank"><i class="fa-solid fa-envelope"></i>Email </a>
-                <a href="https://www.linkedin.com/in/salem-amer-b94822278/" class="contact-item" target="_blank"><i class="fab fa-linkedin" ></i> LinkedIn</a>
-                <a href="https://github.com/SalemAmer3" class="contact-item"  target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.upwork.com/freelancers/~01348f3691331d4797" class="contact-item" target="_blank"><i class="fab fa-upwork"></i> UpWork</a>
-                <a href="https://wa.me/970569068854" class="contact-item whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/xo.png" alt="XO Game" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>❌⭕</div>'">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">XO Game</h3>
+                    <p class="project-desc">Classic Tic-Tac-Toe game with smooth animations and win detection logic.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">HTML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://salemamer3.github.io/XO-Game/" target="_blank" class="link-demo">Live Demo</a>
+                        <a href="https://github.com/SalemAmer3/XO-Game" target="_blank" class="link-code">View Code</a>
+                    </div>
+                </div>
             </div>
-        </section>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/cruds.png" alt="CRUDS Application" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>📝</div>'">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">CRUDS Application</h3>
+                    <p class="project-desc">Complete CRUD operations with local storage and advanced search functionality.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">LocalStorage</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://salemamer3.github.io/CRUDS-Application/" target="_blank" class="link-demo">Live Demo</a>
+                        <a href="https://github.com/SalemAmer3/CRUDS-Application" target="_blank" class="link-code">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/calc.png" alt="Calculator" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>🧮</div>'">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Calculator</h3>
+                    <p class="project-desc">Modern calculator with responsive design and error handling for all operations.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">HTML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://salemamer3.github.io/Calculator/" target="_blank" class="link-demo">Live Demo</a>
+                        <a href="https://github.com/SalemAmer3/Calculator" target="_blank" class="link-code">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/lavStore.png" alt="Lavender Store" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>🛍️</div>'">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Lavender Store</h3>
+                    <p class="project-desc">E-commerce front-end with admin dashboard for managing products and inventory.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">LocalStorage</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://salemamer3.github.io/lavender-store/" target="_blank" class="link-demo">Live Demo</a>
+                        <a href="https://github.com/SalemAmer3/lavender-store" target="_blank" class="link-code">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/portBuil.png" alt="Portfolio Builder" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'project-img-placeholder\'>🎨</div>'">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Portfolio Builder</h3>
+                    <p class="project-desc">Create professional portfolios in minutes with multiple templates and PDF export.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">PDF</span>
+                        <span class="tag">Templates</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://builder-portfolio.netlify.app/" target="_blank" class="link-demo">Live Demo</a>
+                        <a href="https://github.com/SalemAmer3/portfolio-builder" target="_blank" class="link-code">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Have a project in mind? Let's work together and create something amazing!</p>
+            <div class="contact-grid">
+
+
+
+               <a href="#" class="contact-item email"
+   onclick="
+        const mailto = 'mailto:sa6272471@gmail.com';
+        let opened = window.location.href = mailto;
+
+        setTimeout(() => {
+            // إذا ما تغير المتصفح وما فتح الإيميل → اعمل نسخ
+            navigator.clipboard.writeText('sa6272471@gmail.com');
+            alert('Email copied to clipboard!');
+        }, 300);
         
-        <!--     END CONTACT PAGE       -->
-    
+        return false;
+   ">
+    <i class="fas fa-envelope"></i>
+    <div>Email</div>
+</a>
+
+
+
+
+
+                </a>
+                <a href="https://www.linkedin.com/in/salem-amer-b94822278/" class="contact-item linkedin" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <div>LinkedIn</div>
+                </a>
+                <a href="https://github.com/SalemAmer3" class="contact-item github" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <div>GitHub</div>
+                </a>
+                <a href="https://www.upwork.com/freelancers/~01348f3691331d4797" class="contact-item" target="_blank">
+                    <i class="fab fa-upwork"></i>
+                    <div>Upwork</div>
+                </a>
+                <a href="https://wa.me/970569068854" class="contact-item whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>WhatsApp</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Salem Amer. Built with ❤️ and lots of ☕</p>
+        <p style="margin-top: 10px; opacity: 0.7;">Thank you for visiting!</p>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" title="Back to top">↑</button>
+
+    <!-- JavaScript -->
     <script src="main.js"></script>
 </body>
-
 </html>
